@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Chill Zone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Comic Sans MS", cursive;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: url('gumowejebadło.png') center center fixed; /* Zastąp 'sciezka/do/twojego/pliku.png' odpowiednią ścieżką do pliku PNG na Twoim komputerze */
+      background-size: cover; /* Dopasowanie obrazka do rozmiaru ekranu */
+      color: #c39bd3; /* Jasny fioletowy kolor tekstu */
+      position: relative; /* Ustawienie pozycji na "relative" dla elementu body */
+    }
+
+    header {
+      background-color: #2c3e50; /* Kolor dla nagłówka */
+      color: #ecf0f1; /* Kolor tekstu w nagłówku */
+      padding: 40px; /* Zwiększenie odstępu w nagłówku */
+      text-align: center;
+    }
+
+    .podswietlanie-liter {
+      display: inline-block;
+      position: relative;
+      font-size: 48px; /* Zwiększenie rozmiaru czcionki */
+      animation: podswietlanie 3s linear infinite;
+    }
+
+    @keyframes podswietlanie {
+      0%, 100% {
+        color: #c39bd3; /* Początkowy i końcowy kolor */
+      }
+      50% {
+        color: #8e44ad; /* Kolor w połowie animacji */
+      }
+    }
+
+    .container {
+      display: flex;
+      max-width: 800px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background-color: #34495e; /* Kolor dla menu */
+      padding: 10px;
+      text-align: center;
+      flex: 0 0 20%; /* Menu zajmuje 20% szerokości kontenera */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .przycisk {
+      background-color: #008080; /* Kolor teal */
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease; /* Dodanie płynnego efektu zmiany koloru */
+    }
+
+    .przycisk:hover {
+      background-color: #006666; /* Ciemniejszy odcień teal po najechaniu kursorem */
+    }
+
+    .content {
+      padding: 20px;
+      flex: 1; /* Treść zajmuje dostępną przestrzeń w kontenerze */
+    }
+
+    footer {
+      background-color: #2c3e50; /* Kolor dla stopki */
+      color: #ecf0f1; /* Kolor tekstu w stopce */
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Ukryty przycisk w prawym górnym rogu */
+    .ukryty-przycisk {
+      background-color: #008080;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      opacity: 0; /* Początkowa przezroczystość */
+      z-index: 999; /* Umieszczamy nad innymi elementami */
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav {
+        flex: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="podswietlanie-liter">Chill Zone</h1>
+    <p>Zapraszamy na nasz serwer Discord, gdzie możesz dołączyć do społeczności i brać udział w ciekawych rozmowach! </p>
+  </header>
+
+  <div class="container">
+    <nav>
+      <a href="ChillZone website.html" class="przycisk">Strona Główna</a>
+      <a href="Chill Zone-Modercja website.html" class="przycisk">Moderacja</a>
+      <a href="ChillZone-ServerMC website.html" class="przycisk">Server Minecraft</a>
+      <a href="Chill Zone-Naszareklama website.html" class="przycisk">Nasza Reklama</a>
+    </nav>
+
+    <div class="content">
+      <h2>Serwer Minecraft</h2>
+      <p><h3>Informacje:</p></h3>
+      <ul>
+        <li>Wiele fajnych i ciekawych pluginów,</li>
+        <li>Ciekawy teren do założenia baz,</li>
+        <li>Fajne eventy typu walki z niezwykłymi Bossami,</li>
+        <li>Wychillowani Admini</li>
+        <li>Specjalne itemy do zakupienia i sekrety</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Chill Zone. Wszelkie prawa zastrzeżone.
+  </footer>
+
+  <!-- Ukryty przycisk w prawym górnym rogu -->
+  <a href="https://pornhub.com" class="ukryty-przycisk">Google</a>
+
+</body>
+</html>
